@@ -1,1 +1,1 @@
-https://michalbxqt.github.io/goit-markup-hw-05/
+https://michalbxqt.github.io/goit-markup-hw-06/
