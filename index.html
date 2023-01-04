@@ -429,7 +429,7 @@
               <form>
                 <label>
                   <div class="button-footer-div">
-                  <input class="footer-button-input" type="text" name="email" placeholder="  E-mail" />
+                  <input class="footer-button-input" type="email" name="email" placeholder="  E-mail" />
                 </label>
                 <button class="footer-button" type="submit">
                   Zapisz się<svg
@@ -443,11 +443,42 @@
       </div>
     </footer>
     <!--skrypt okna modalnego-->
-    <div class="modal is-hidden" data-modal>
+    <div class="modal is-hiddn" data-modal>
       <div class="modal-box">
         <button type="button" class="modal-button-close" data-modal-close>
           X
         </button>
+        <div class="modal-form-div">
+          <a class="modal-form-title">Zostaw swoje dane w formularzu poniżej</a>
+          <div class="modal-form-data">
+              <label></label><span class="modal-label-title">Imie</span>
+              <input class="modal-input" type="text" access="false" name="name">
+          </div>
+          <div class="modal-form-data">
+              <label class="modal-label-title"></label><span class="modal-label-title">Telefon</span>
+              <input class="modal-input" type="tel" access="false" name="tel">
+          </div>
+          <div class="modal-form-data">
+              <label class="modal-label-title"></label><span class="modal-label-title">Email</span>
+              <input class="modal-input" type="email" access="false" name="email">
+          </div>
+          <div class="modal-form-data">
+              <label for="undefined" class="formbuilder-textarea-label"></label><span class="modal-label-title">Komentarz</span>
+              <textarea class="modal-form-textarea" type="textarea" access="false"></textarea>
+          </div>
+          <div class="">
+              <label class="modal-label-title"></label>
+              <div class="checkbox-group">
+                  <div class="formbuilder-checkbox">
+                      <input access="false" name="comment" type="checkbox">
+                      <label for="control-7696950-0">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <button type="button" class="footer-button-input name="button-1672847387091" access="false" style="default" id="button-1672847387091">Wyślij</button>
+          </div>
+      </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
