@@ -429,7 +429,7 @@
               <form>
                 <label>
                   <div class="button-footer-div">
-                  <input class="footer-button-input" type="email" name="email" placeholder="  E-mail" />
+                  <input class="footer-button-input" type="email" name="email" placeholder="E-mail" />
                 </label>
                 <button class="footer-button" type="submit">
                   Zapisz się<svg
@@ -443,14 +443,13 @@
       </div>
     </footer>
     <!--skrypt okna modalnego-->
-    <div class="modal is-hiddn" data-modal>
+    <div class="modal is-hidden" data-modal>
       <div class="modal-box">
         <button type="button" class="modal-button-close" data-modal-close>
           X
         </button>
         <div class="modal-form-div">
           <a class="modal-form-title">Zostaw swoje dane w formularzu poniżej</a>
-          <form>
           <div class="modal-form-data">
               <label></label><span class="modal-label-title">Imie</span>
               <input class="modal-input" type="name" name="name">
@@ -461,7 +460,7 @@
           </div>
           <div class="modal-form-data">
               <label class="modal-label-title"></label><span class="modal-label-title">Telefon</span>
-              <input class="modal-input" type="phone" name="phone">
+              <input class="modal-input" type="phone" name="phone" minlength="9">
               <svg
               class="modal-input-contact-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
@@ -479,18 +478,28 @@
               <label for="undefined"></label><span class="modal-label-title">Komentarz</span>
               <textarea class="modal-form-textarea" type="textarea" placeholder="Wprowadź tekst"></textarea>
           </div>
-          <div class="">
-          </form>
-              <label class="modal-label-title"></label>
-              <div class="checkbox-group">
-                  <div class="modal-checkbox-div">
-                      <input class="modal-checkbox" type="checkbox">
-                      <label class="modal-checkbox-text">Oświadczam iż akceptuję <a href="#" class="modal-checkbox-link">Regulamin</a> i <a href="#" class="modal-checkbox-link">Politykę Prywatności.</a></label>
-                  </div>
-              </div>
-          </div>
-          <div>
-              <button type="button" class="modal-button" name="button-1672847387091" access="false" style="default" id="button-1672847387091">Wyślij</button>
+          <label class="modal-label-checkbox">
+            <div class="modal-div-checkbox">
+              <input
+                type="checkbox"
+                name="checkbox-accept"
+                class="checkbox-hidden"
+                value="agreed"
+                required
+              />
+              <svg width="16" height="15" class="checkbox-off">
+                <use href="./images/icons.svg#icon-off"></use>
+              </svg>
+              <svg width="16" height="15" class="checkbox-on">
+                <use href="./images/icons.svg#icon-on"></use>
+              </svg>
+            </div>
+            <span>
+              Oświadczam iż akceptuję <a class="modal-checkbox-links" href="#">Regulamin</a> i
+              <a class="modal-checkbox-links" href="#">Politykę Prywatności.</a>
+            </span>
+          </label>
+              <button type="button" class="modal-button" name="button">Wyślij</button>
           </div>
       </div>
       </div>
