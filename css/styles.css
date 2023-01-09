@@ -77,6 +77,7 @@ body {
 }
 .top-link:hover {
   color: var(--hover-text-color);
+  transition: var(--transition-v1);
 }
 .top-section-list-contact {
   display: flex;
@@ -90,6 +91,7 @@ body {
 }
 .top-section-list-contact:hover {
   color: var(--hover-text-color);
+  transition: var(--transition-v1);
 }
 .icon-contact {
   margin-right: 10px;
@@ -104,6 +106,7 @@ body {
 .current:hover,
 .current:focus {
   color: var(--hover-text-color);
+  transition: var(--transition-v1);
 }
 .current::after {
   content: '';
@@ -284,12 +287,14 @@ body {
   color: var(--our-team-icons-colos);
   cursor: pointer;
   margin-top: 16px;
+  border-radius: 50%;
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
   color: var(--white-text-color);
   background-color: var(--hover-text-color);
   border-radius: 50%;
+  transition: var(--transition-v1);
 }
 .team-icon-link:not(:last-child) {
   margin-right: 10px;
@@ -331,6 +336,7 @@ body {
 .our-clients-logo-link:focus {
   border: 1px solid var(--hover-text-color);
   fill: var(--hover-text-color);
+  transition: var(--transition-v1);
 }
 .client-logo {
   color: var(--hover-text-color);
@@ -374,6 +380,7 @@ body {
 }
 .bottom-section-contact:hover {
   color: var(--hover-text-color);
+  transition: var(--transition-v1);
 }
 .footer-section-adress {
   font-size: 14px;
@@ -387,6 +394,7 @@ body {
 }
 .footer-section-adress:hover {
   color: var(--hover-text-color);
+  transition: var(--transition-v1);
 }
 /* footer section icons */
 .footer-icon-list {
@@ -426,7 +434,7 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.button-footer-div {
+.button-footer-form {
   display: flex;
   margin: 0px;
 }
@@ -462,10 +470,12 @@ body {
 .footer-button-icon {
   margin-left: 24px;
   fill: var(--white-text-color);
+  transition: var(--transition-v1);
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: var(--hover-text-color);
+  transition: var(--transition-v1);
 }
 /* portfolio section */
 /* button-section */
@@ -490,6 +500,12 @@ body {
   background-color: var(--hover-text-color);
   border-radius: 4px;
   box-shadow: 0px 2px 2px 0px #0000001f;
+
+  box-shadow: 0px 1px 2px 0px #00000014;
+
+  box-shadow: 0px 3px 1px 0px #0000001a;
+
+  transition: var(--transition-v1);
 }
 .buttons-list {
   display: flex;
@@ -530,6 +546,7 @@ body {
 .photo-boxes-list figure:hover,
 .photo-boxes-list figure:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+  transition: var(--transition-v1);
 }
 .photo-boxes-list .item {
   border: 1px solid var(--border-color);
@@ -553,7 +570,7 @@ body {
   position: absolute;
   top: 0;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-v1);
   padding-top: 49px;
   padding-bottom: 49px;
   padding-left: 24px;
@@ -561,6 +578,7 @@ body {
 }
 .photo-boxes-list li:hover .photo-box-overlay-text {
   transform: translateY(0);
+  transition: var(--transition-v1);
 }
 /* modal section */
 .modal {
@@ -694,15 +712,12 @@ body {
 }
 .modal-label-checkbox {
   display: flex;
-  gap: 7px;
+  gap: 8px;
   margin-bottom: 30px;
   text-align: center;
   align-items: center;
   margin-left: 54px;
-}
-.modal-div-checkbox {
   position: relative;
-  width: 16px;
 }
 .checkbox-hidden {
   display: none;
@@ -710,23 +725,32 @@ body {
 .checkbox-off {
   position: absolute;
   transform: translate(0%, -50%);
-  top: 0;
-  left: 0;
+  top: 11px;
+  left: -5px;
   opacity: 1;
+  border: 2px solid var(--black-text-color);
+  border-radius: 2px;
+  width: 16px;
+  height: 15px;
+  transition: var(--transition-v1);
 }
 .checkbox-on {
   position: absolute;
   transform: translate(0%, -50%);
-  top: 0;
-  left: 0;
+  top: 11px;
+  left: -5px;
   opacity: 0;
   z-index: 1;
+  transition: var(--transition-v1);
 }
 .checkbox-hidden:checked ~ .checkbox-on {
   opacity: 1;
 }
 .checkbox-hidden:checked + .checkbox-off {
   opacity: 0;
+}
+.modal-checkbox-links-wrapper {
+  margin-left: 16px;
 }
 .modal-checkbox-links {
   font-size: 14px;
