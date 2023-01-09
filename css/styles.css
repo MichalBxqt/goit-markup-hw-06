@@ -691,7 +691,6 @@ body {
   padding-left: 16px;
   padding-top: 12px;
 }
-.modal-form-textarea:hover,
 .modal-form-textarea:focus {
   border: 1px solid var(--hover-text-color);
   transition: var(--transition-v1);
